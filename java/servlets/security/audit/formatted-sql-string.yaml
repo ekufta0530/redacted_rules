@@ -1,0 +1,7 @@
+rules:
+- id: formatted-sql-string
+  message: This rule has been deprecated use `r/java.lang.security.audit.formatted-sql-string.formatted-sql-string`
+    instead.
+  cwe:
+  - 'CWE-89: Improper Neutralization of Special Elements used in an SQL Command (''SQL
+    Injection'')'

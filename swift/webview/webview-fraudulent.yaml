@@ -1,0 +1,7 @@
+rules:
+- id: swift-webview-config-fraudulent-site-warning
+  message: Webviews were observed that explicitly opt ouf of the WKWebView fraudulent
+    site warnings. Consider enabling such functionality, to better protect your users
+    from fraud/malware.
+  cwe:
+  - 'CWE-272: Least Privilege Violation'

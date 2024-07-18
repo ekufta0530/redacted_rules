@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-_getws
+  message: '_getws is a banned function: no size limit on data. Alternatives are _getws_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

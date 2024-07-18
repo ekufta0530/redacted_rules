@@ -1,0 +1,9 @@
+rules:
+- id: swift-webview-over-permissive-read-access
+  message: Webviews were observed to load content where the `allowingReadAccessTo`
+    parameter is a directory, rather than a single file. If a single file is passed
+    as a parameter, then only that single file is accessible, but passing a directory,
+    is potentially over permissive. Consider whether this functionality is indeed
+    required.
+  cwe:
+  - 'CWE-272: Least Privilege Violation'

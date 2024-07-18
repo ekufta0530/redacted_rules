@@ -1,0 +1,7 @@
+rules:
+- id: swift-webview-config-https-upgrade
+  message: Webviews were observed that do not enable the `upgradeKnownHostsToHTTPS`
+    feature. This feature will ensure accidental HTTP connections are automatically
+    upgraded to HTTPS, avoiding potential data leakage over the network.
+  cwe:
+  - 'CWE-272: Least Privilege Violation'

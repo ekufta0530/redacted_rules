@@ -1,0 +1,7 @@
+rules:
+- id: integer-overflow-allocation
+  message: '`$PTR` is allocated by `$ALLOC`. The size of this allocation is calculated
+    from `$SIZE_EXPR`. If this calculation overflows then `$SINK` may overflow the
+    heap allocated buffer.'
+  cwe:
+  - 'CWE-680: Integer Overflow to Buffer Overflow'

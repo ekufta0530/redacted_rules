@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_mbccat
+  message: '_mbccat is a banned function: no size limit on data. Alternatives are
+    strcat_s, StringCbCat, StringCbCatEx, StringCchCat, StringCchCatEx, strlcat'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

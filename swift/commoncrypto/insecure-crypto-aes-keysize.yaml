@@ -1,0 +1,6 @@
+rules:
+- id: insecure-crypto-aes-keysize
+  message: AES symmetric cryptographic operations were identified using a key size
+    of 128bit which is less than the industry standard recommendation of 256bit.
+  cwe:
+  - 'CWE-326: Inadequate Encryption Strength'

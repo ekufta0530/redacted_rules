@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-makepath
+  message: makepath is a banned function.
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

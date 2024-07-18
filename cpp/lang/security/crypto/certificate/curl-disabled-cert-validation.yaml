@@ -1,0 +1,7 @@
+rules:
+- id: curl-disabled-cert-validation
+  message: TLS ceritificate validation is disabled. This could lead to a potential
+    man-in-the-middle attack. This may be used for testing purposes but it is not
+    considered safe in production deployments.
+  cwe:
+  - 'CWE-295: Improper Certificate Validation'

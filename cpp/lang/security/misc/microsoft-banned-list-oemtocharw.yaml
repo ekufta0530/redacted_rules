@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-oemtocharw
+  message: 'OemToCharW is a banned function: no bounds checking. Alternatives are
+    WideCharToMultiByte'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

@@ -1,0 +1,9 @@
+rules:
+- id: weak-symmetric-mode
+  message: Detected the use of `$METHOD("$VALUE")` which is considered a weak cryptographic
+    mode. Where possible, leverage the industry standard recommendation which is to
+    use a block cipher such as `AES` with at least `128-bit` strength, an example
+    of a secure algorithm is `AES-256-GCM`. If your company has its own guidelines,
+    you should follow your company's internal best practices.
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-sprintfw
+  message: 'sprintfW is a banned function: no bounds checking. Alternatives are swprintf_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

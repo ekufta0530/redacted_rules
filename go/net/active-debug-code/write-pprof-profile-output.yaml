@@ -1,0 +1,7 @@
+rules:
+- id: write-pprof-profile-output
+  message: Detected stack traces being printed or included in an HTTP response. This
+    could expose sensitive information if deployed to a production environment in
+    a user facing manner.
+  cwe:
+  - 'CWE-489: Active Debug Code'

@@ -1,0 +1,7 @@
+rules:
+- id: insecure-crypto-rsa-keysize
+  message: RSA key generation was identified where the key size was less than the
+    industry standard recommendation of 2048 bits minimum. Use a key strength of at
+    least 2048 bit, or stronger where appropriate.
+  cwe:
+  - 'CWE-326: Inadequate Encryption Strength'

@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-strncatw
+  message: 'StrNCatW is a banned function: limited error detection. Alternatives are
+    StringCbCatN, StringCbCatNEx, StringCchCatN, StringCchCatNEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

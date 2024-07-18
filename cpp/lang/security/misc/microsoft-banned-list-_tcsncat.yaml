@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_tcsncat
+  message: '_tcsncat is a banned function: no maximum length. Alternatives are StringCbLength,
+    StringCchLength, UnalignedStringCbLength, UnalignedStringCchLength'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

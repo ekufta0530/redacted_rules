@@ -1,0 +1,9 @@
+rules:
+- id: swift-nscoding
+  message: The application was found to use nscoding, which is not considered secure.
+    When decoding serialized objects, it is not possible to determine what they are,
+    until post-decoding. `NSSecureCoding` should be used in place of nscoding, and
+    secure serialization and deserialization should be used in all cases where such
+    functionality is required.
+  cwe:
+  - 'CWE-502: Deserialization of Untrusted Data'

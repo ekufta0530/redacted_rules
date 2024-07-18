@@ -1,0 +1,7 @@
+rules:
+- id: microsoft-banned-list-strcatn
+  message: 'StrCatN is a banned function: no bounds checking. Alternatives are StringCbCat,
+    StringCbCatEx, StringCbCatN, StringCbCatNEx, StringCchCat, StringCchCatEx, StringCchCatN,
+    StringCchCatNEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

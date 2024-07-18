@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-_sntscanf
+  message: '_sntscanf is a banned function: no maximum length. Alternatives are _snscanf_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

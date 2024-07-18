@@ -1,0 +1,7 @@
+rules:
+- id: microsoft-banned-list-_snwprintf
+  message: '_snwprintf is a banned function: does not null-terminate. Alternatives
+    are _snwprintf_s, StringCbPrintf, StringCbPrintf_l, StringCbPrintf_lEx, StringCbPrintfEx,
+    StringCchPrintf, StringCchPrintfEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

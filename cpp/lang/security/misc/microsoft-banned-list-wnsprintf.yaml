@@ -1,0 +1,7 @@
+rules:
+- id: microsoft-banned-list-wnsprintf
+  message: 'wnsprintf is a banned function: no null-termination. Alternatives are
+    StringCbPrintf, StringCbPrintf_l, StringCbPrintf_lEx, StringCbPrintfEx, StringCchPrintf,
+    StringCchPrintfEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

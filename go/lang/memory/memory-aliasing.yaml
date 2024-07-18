@@ -1,0 +1,11 @@
+rules:
+- id: memory-aliasing
+  message: Implicit memory aliasing detected in for loop. When using for loops in
+    Go, the iteration variable is reused across all iterations. This means the variable
+    itself doesn't change, just its value does. Storing the address of this variable
+    can lead to unexpected behavior, as the pointer will be dereferenced after the
+    loop finishes. To avoid this issue, it's better to directly access the elements
+    of the iterable you're looping through, rather than using the iterator variable.
+    By doing this, you can prevent any unintended side effects and improve the stability
+    of your code.
+  cwe: 'CWE-118: Incorrect Access of Indexable Resource (''Range Error'')'

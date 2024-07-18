@@ -1,0 +1,5 @@
+rules:
+- id: search-laravel-form-csrf
+  message: This rule has been deprecated.
+  cwe:
+  - 'CWE-352: Cross-Site Request Forgery (CSRF)'

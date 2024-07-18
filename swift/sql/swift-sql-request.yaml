@@ -1,0 +1,8 @@
+rules:
+- id: swift-sql-in-request
+  message: It was observed that the application seemingly sends SQL to the server
+    in network requests. This is effectively SQL injection, allowing an attacker to
+    modify the SQL statements being executed by the database server. This can allow
+    for the accessing of, deletion of, altering of, and addition of data to the database.
+  cwe:
+  - 'CWE-807: Reliance on Untrusted Inputs in a Security Decision'

@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-lstrcpy
+  message: 'lstrcpy is a banned function: no bounds checking. Alternatives are StringCbCopy,
+    StringCbCopyEx, StringCchCopy, StringCchCopyEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

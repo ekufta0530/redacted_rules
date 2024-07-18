@@ -1,0 +1,7 @@
+rules:
+- id: pg-orm-sqli-taint
+  message: This rule has been deprecated. Please remove it from your policies and
+    rulepacks.
+  cwe:
+  - 'CWE-89: Improper Neutralization of Special Elements used in an SQL Command (''SQL
+    Injection'')'

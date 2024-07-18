@@ -1,0 +1,8 @@
+rules:
+- id: ATS-local-networking
+  message: The application's App Transport Security (ATS) configuration allows for
+    local networking, which in some iOS versions is blocked by default in ATS. Consider
+    whether or not the application requires this in release builds, or for development
+    reasons only. This follows the principle of least privelege, reducing the attack
+    surface if local networking is not required.
+  cwe: 'CWE-272: Least Privilege Violation'

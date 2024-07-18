@@ -1,0 +1,6 @@
+rules:
+- id: std-vector-invalidation
+  message: Modifying an `std::vector` while iterating over it could cause the container
+    to reallocate, triggering memory corruption.
+  cwe:
+  - 'CWE-416: Use After Free'

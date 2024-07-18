@@ -1,0 +1,6 @@
+rules:
+- id: xss-controller-html
+  message: 'The application is sending dynamically generated HTML to the client without
+    escaping potentially untrusted input. This can lead to Cross-Site Scripting (XSS). '
+  cwe:
+  - 'CWE-79: Improper Neutralization of Input During Web Page Generation'

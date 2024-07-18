@@ -1,0 +1,6 @@
+rules:
+- id: tainted-sql-from-http-request
+  message: This rule is deprecated
+  cwe:
+  - 'CWE-89: Improper Neutralization of Special Elements used in an SQL Command (''SQL
+    Injection'')'

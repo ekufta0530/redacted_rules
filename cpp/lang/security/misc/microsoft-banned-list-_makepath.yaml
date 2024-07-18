@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_makepath
+  message: '_makepath is a banned function: no size limit on data. Alternatives are
+    _makepath_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

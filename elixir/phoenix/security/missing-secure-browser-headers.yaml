@@ -1,0 +1,8 @@
+rules:
+- id: missing-secure-browser-headers
+  message: The app is missing secure HTTP headers that attempt to mitigate XSS, click-jacking,
+    and content-sniffing attacks. Missing Secure HTTP Headers is flagged by this rule
+    when a pipeline accepts "html" requests, but does not implement the `:put_secure_browser_headers`
+    plug.
+  cwe:
+  - 'CWE-693: Protection Mechanism Failure'

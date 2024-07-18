@@ -1,0 +1,10 @@
+rules:
+- id: insecure-hashing-algorithm-md5
+  message: 'The use of the MD5 hashing algorithm was identified which is considered
+    insecure. MD5 is not collision resistant and is therefore not suitable for cryptographic
+    or secure use-cases. Use stronger algorithms such as SHA256, SHA512, or adaptive
+    hashing algorithms such as argon2 or bcrypt. **Note**: MD5 is still considered
+    acceptable when used for Message Authentication Purposes, e.g. with HMAC although
+    better and stronger algorithms should be strongly considered.'
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

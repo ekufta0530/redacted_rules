@@ -1,0 +1,8 @@
+rules:
+- id: libxml2-audit-parser
+  message: The libxml2 library is used to parse XML. When auditing such code, make
+    sure that either the document being parsed is trusted or that the parsing options
+    are safe to consume untrusted documents. In such case make sure DTD or XInclude
+    documents cannot be loaded and there is no network access.
+  cwe:
+  - 'CWE-611: Improper Restriction of XML External Entity Reference'

@@ -1,0 +1,10 @@
+rules:
+- id: servletresponse-writer-xss
+  message: 'Untrusted user input enters a dangerous API, which can lead to a Cross-site
+    scripting (XSS) vulnerability. XSS vulnerabilities occur when untrusted input
+    executes malicious JavaScript code, leading to issues such as account compromise
+    and sensitive information leakage. Ensure your data is properly encoded using
+    org.owasp.encoder.Encode.forHtml: `Encode.forHtml($VAR)`.'
+  cwe:
+  - 'CWE-79: Improper Neutralization of Input During Web Page Generation (''Cross-site
+    Scripting'')'

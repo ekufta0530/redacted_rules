@@ -1,0 +1,7 @@
+rules:
+- id: snprintf-source-size
+  message: The size parameter to `snprintf` is derived from the source data, not the
+    destination buffer. This may trigger a buffer overflow and memory corruption if
+    `$SRC` is larger than `$DEST`.
+  cwe:
+  - 'CWE-787: Out-of-bounds Write'

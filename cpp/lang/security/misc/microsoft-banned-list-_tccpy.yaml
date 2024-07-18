@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_tccpy
+  message: '_tccpy is a banned function: no bounds checking. Alternatives are strcpy_s,
+    StringCbCopy, StringCbCopyEx, StringCchCopy, StringCchCopyEx, strlcpy'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

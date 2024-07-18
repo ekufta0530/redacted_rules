@@ -1,0 +1,9 @@
+rules:
+- id: missing-csp
+  message: Content-Security-Policy is an HTTP header that helps mitigate a number
+    of attacks, including Cross-Site Scripting. Missing Content-Security-Policy is
+    flagged by this rule when a pipeline implements the `:put_secure_browser_headers`
+    plug, but does not provide a Content-Security-Policy header in the custom headers
+    map.
+  cwe:
+  - 'CWE-693: Protection Mechanism Failure'

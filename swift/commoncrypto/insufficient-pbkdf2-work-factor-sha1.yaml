@@ -1,0 +1,7 @@
+rules:
+- id: insufficient-pbkdf2-work-factor-sha1
+  message: PBKDF2 usage was identified with an insufficient work factor, i.e. an iteration
+    count (rounds) lower than modern guidelines prescribe. Per OWASP guidance, 1.3M
+    iterations should be used with SHA1
+  cwe:
+  - 'CWE-916: Use of Password Hash With Insufficient Computational Effort'

@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-wcscat
+  message: 'wcscat is a banned function: limited error detection. Alternatives are
+    wcscat_s, StringCbCat, StringCbCatEx, StringCchCat, StringCchCatEx, wcslcat'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

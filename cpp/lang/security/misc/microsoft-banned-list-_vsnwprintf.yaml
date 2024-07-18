@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_vsnwprintf
+  message: '_vsnwprintf is a banned function: limited error detection. Alternatives
+    are _vsnwprintf_s, StringCbVPrintf, StringCbVPrintf_l, StringCbVPrintf_lEx, StringCbVPrintfEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

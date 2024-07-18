@@ -1,0 +1,7 @@
+rules:
+- id: flask-login-session-protection-app-config-none
+  message: Flask-Login provides session protection to help prevent user sessions from
+    being stolen. When this is active, sessions will be marked as non-fresh when the
+    user's IP or user agent is changed. It is not advised to disable this feature.
+  cwe:
+  - 'CWE-613: Insufficient Session Expiration'

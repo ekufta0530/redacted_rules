@@ -1,0 +1,7 @@
+rules:
+- id: sectrustevaluate-misuse
+  message: The application should check the trust result of the SecTrustEvaluate API
+    call to ensure that the connection is trusted. Failure to do so may allow connections
+    to proceed under insecure circumstances, resulting in a reduction in transport
+    layer security guarantees.
+  cwe: 'CWE-295: Improper Certificate Validation'

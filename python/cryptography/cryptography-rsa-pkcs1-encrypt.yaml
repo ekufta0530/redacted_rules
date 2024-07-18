@@ -1,0 +1,10 @@
+rules:
+- id: cryptography-rsa-pkcs1-encrypt
+  message: The implementation of the PKCS1 v1.5 padding scheme in the `cryptography`
+    package is vulnerable to timing attacks. The RSA decryption raises an exception
+    on failure, which takes a different amount of time than returning a value upon
+    success. This is not considered secure and it is not recommended that PKCS1v15
+    is used in new applications. OAEP should be preferred for encryption and PSS should
+    be preferred for signatures.
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

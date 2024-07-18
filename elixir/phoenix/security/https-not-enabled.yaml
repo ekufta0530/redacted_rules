@@ -1,0 +1,8 @@
+rules:
+- id: https-not-enabled
+  message: The app does not contain configurations for enabled HTTPS in a non-development
+    environment. This can lead to sensitive data being transmitted in cleartext, which
+    can be intercepted by an attacker. To prevent this vulnerability, enable HTTPS
+    in non-development environments.
+  cwe:
+  - 'CWE-319: Cleartext Transmission of Sensitive Information'

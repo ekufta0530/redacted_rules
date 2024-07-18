@@ -1,0 +1,6 @@
+rules:
+- id: crlf-injection-logs-deepsemgrep
+  message: When data from an untrusted source is put into a logger and not neutralized
+    correctly, an attacker could forge log entries or include malicious content.
+  cwe:
+  - 'CWE-93: Improper Neutralization of CRLF Sequences (''CRLF Injection'')'

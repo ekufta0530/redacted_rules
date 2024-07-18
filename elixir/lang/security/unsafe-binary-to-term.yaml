@@ -1,0 +1,8 @@
+rules:
+- id: unsafe-binary-to-term
+  message: 'Untrusted input might be injected into the Erlang function `binary_to_term`,
+    which can lead to a remote code execution or memory exhaustion. To prevent this
+    vulnerability, replace functionality with the `Plug.Crypto.non_executable_binary_to_term`
+    function. '
+  cwe:
+  - 'CWE-94: Improper Control of Generation of Code (''Code Injection'')'

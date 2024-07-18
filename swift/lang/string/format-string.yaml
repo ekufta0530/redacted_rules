@@ -1,0 +1,7 @@
+rules:
+- id: swift-format-string
+  message: Format string attacks occur when untrusted data is passed directly into
+    functions that build formatted strings, within the format parameter. This can
+    result in memory/data leakage.
+  cwe:
+  - 'CWE-134: Use of Externally-Controlled Format String'

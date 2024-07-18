@@ -1,0 +1,11 @@
+rules:
+- id: session-fixation
+  message: Detected `$REQ` argument which enters `$RES.$HEADER`, this can lead to
+    session fixation vulnerabilities if an attacker can control the cookie value.
+    This vulnerability can lead to unauthorized access to accounts, and in some esoteric
+    cases, Cross-Site-Scripting (XSS). Users should not be able to influence cookies
+    directly, for session cookies, they should be generated securely using an approved
+    session management library. If the cookie does need to be set by a user, consider
+    using an allow-list based approach to restrict the cookies which can be set.
+  cwe:
+  - 'CWE-384: Session Fixation'

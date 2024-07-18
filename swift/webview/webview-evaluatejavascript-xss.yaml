@@ -1,0 +1,12 @@
+rules:
+- id: swift-evaluate-js
+  message: Potential cross site scripting (XSS) occurs due to untrusted input being
+    loaded into a WebView. The impact of such issues can vary depending on the features,
+    permissions and exposure of data & functionality that the WebView contains. For
+    example, in some applications the presence of JavaScript bridges may allow for
+    the instrumentation of application code, and potentially arbitrary code execution
+    in the context of the app. In other instances, it may be possible to manipulate
+    the DOM to redraw the UI and phish users, or execute other typical XSS attacks.
+  cwe:
+  - 'CWE-79: Improper Neutralization of Input During Web Page Generation (''Cross-site
+    Scripting'')'

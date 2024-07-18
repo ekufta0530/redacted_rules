@@ -1,0 +1,7 @@
+rules:
+- id: file-stat-before-action
+  message: A check is done with `stat` and then the file is used. There is no guarantee
+    that the status of the file has not changed since the call to `stat` which may
+    allow attackers to bypass permission checks.
+  cwe:
+  - 'CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition'

@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-sprintfa
+  message: 'sprintfA is a banned function: no bounds checking. Alternatives are sprintf_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

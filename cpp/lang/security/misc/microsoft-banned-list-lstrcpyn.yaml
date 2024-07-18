@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-lstrcpyn
+  message: 'lstrcpyn is a banned function: limited error detection. Alternatives are
+    StringCbCopy, StringCbCopyEx, StringCchCopy, StringCchCopyEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

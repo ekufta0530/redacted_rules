@@ -1,0 +1,7 @@
+rules:
+- id: microsoft-banned-list-gets
+  message: 'gets is a banned function: limited error detection; deprecated by c11
+    standard. Alternatives are gets_s, fgets, StringCbGets, StringCbGetsEx, StringCchGets,
+    StringCchGetsEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

@@ -1,0 +1,7 @@
+rules:
+- id: keychain-accessible-always
+  message: The application was observed to store keychain items with the accessibility
+    type `kSecAttrAccessibleAlways` meaning that the data is not sufficiently protected
+    at rest. Ideally, the application should use `kSecAttrAccessibleWhenUnlocked`
+    to configure the data to be accessible only when the user has unlocked the screen.
+  cwe: 'CWE-272: Least Privilege Violation'

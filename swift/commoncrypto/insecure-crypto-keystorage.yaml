@@ -1,0 +1,9 @@
+rules:
+- id: insecure-crypto-keystorage
+  message: Key generation routines were identified where the resultant keys are not
+    stored protected by the Secure Enclave. On iOS/macOS systems, cryptographic keys
+    can be generated within the Secure Enclave - making them inaccessible to the rest
+    of the system. The keys can be used for operations (signing, decryption, etc)
+    but the private keys cannot be dumped or copied - even on rooted/jailbroken systems.
+  cwe:
+  - 'CWE-922: Insecure Storage of Sensitive Information'

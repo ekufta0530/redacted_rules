@@ -1,0 +1,6 @@
+rules:
+- id: search-active-debug
+  message: Debug logging is explicitly enabled. This can potentially disclose sensitive
+    information and should never be active on production systems.
+  cwe:
+  - 'CWE-489: Active Debug Code'

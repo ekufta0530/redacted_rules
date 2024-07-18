@@ -1,0 +1,8 @@
+rules:
+- id: swift-conceal-data-when-backgrounding
+  message: It does not appear that the application attempts to conceal on-screen data
+    when the app enters the background. As a result, there exists a non negligible
+    chance that sensitive data on screen may be persisted in the screenshot captured
+    by the system which is shown in the multi-tasker view.
+  cwe:
+  - 'CWE-200: Exposure of Sensitive Information to an Unauthorized Actor'

@@ -1,0 +1,8 @@
+rules:
+- id: swift-webview-config-base-url
+  message: UIWebView instances were observed where the baseURL is misconfigured as
+    nil, which allows for origin abuse within the webview. In order to remove the
+    effective origin, the application should explicitly set the baseURL to `about:blank`
+    or similar.
+  cwe:
+  - 'CWE-272: Least Privilege Violation'

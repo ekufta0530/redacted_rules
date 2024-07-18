@@ -1,0 +1,8 @@
+rules:
+- id: swift-named-persistent-pasteboards
+  message: The application was found to use named persistent pasteboards, which Apple
+    strongly discourages and were deprecated in iOS 10. The application should use
+    shared containers to pass data to trusted applications deployed under the same
+    developer account.
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

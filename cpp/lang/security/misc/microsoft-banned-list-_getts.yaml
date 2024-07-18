@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_getts
+  message: '_getts is a banned function: no size limit on data. Alternatives are StringCbGets,
+    StringCbGetsEx, StringCchGets, StringCchGetsEx, gets_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

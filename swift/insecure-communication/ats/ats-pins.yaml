@@ -1,0 +1,8 @@
+rules:
+- id: ATS-CA-pins
+  message: The application's App Transport Security (ATS) configuration leverages
+    the in-built public key pinning mechanisms however has pins which are Certificate
+    Authority Identities, rather than Leaf Identities. Trusting a Certificate Authority
+    is much more lenient than trusting a single leaf identity. Consider pinning to
+    leaf identities rather than CA, following the principle of least privelege.
+  cwe: 'CWE-272: Least Privilege Violation'

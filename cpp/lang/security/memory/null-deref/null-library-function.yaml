@@ -1,0 +1,6 @@
+rules:
+- id: null-library-function
+  message: The `$SOURCE` function returns NULL on error and this line dereferences
+    the return value without checking for NULL.
+  cwe:
+  - 'CWE-476: NULL Pointer Dereference'

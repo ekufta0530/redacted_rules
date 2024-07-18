@@ -1,0 +1,7 @@
+rules:
+- id: avoid-mktemp
+  message: The function `mktemp` is deprecated. When using this function, it is possible
+    for an attacker to modify the created file before the filename is returned. Use
+    `NamedTemporaryFile()` instead and pass it the `delete=False` parameter.
+  cwe:
+  - 'CWE-377: Insecure Temporary File'

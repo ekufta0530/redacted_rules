@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_tscanf
+  message: '_tscanf is a banned function: no bounds checking for outputs. Alternatives
+    are scanf_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

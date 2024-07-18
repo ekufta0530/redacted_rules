@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-lstrncat
+  message: 'lstrncat is a banned function: limited error detection. Alternatives are
+    StringCbCat, StringCbCatEx, StringCchCat, StringCchCatEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

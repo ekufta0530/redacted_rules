@@ -1,0 +1,7 @@
+rules:
+- id: keychain-passcode-fallback
+  message: The application was observed to store keychain items that leverage user
+    authentication but allow the passcode fallback. Biometric modalities are considered
+    more secure than 4 or 6 digit pincodes on iOS, and should be preferred over the
+    passcode.
+  cwe: 'CWE-272: Least Privilege Violation'

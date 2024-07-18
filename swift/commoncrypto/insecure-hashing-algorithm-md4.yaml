@@ -1,0 +1,8 @@
+rules:
+- id: insecure-hashing-algorithm-md4
+  message: The use of the MD4 hashing algorithm was identified which is considered
+    insecure. MD4 is not collision resistant and is therefore not suitable for cryptographic
+    or secure use-cases. Use stronger algorithms such as SHA256, SHA512, or adaptive
+    hashing algorithms such as argon2 or bcrypt.
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

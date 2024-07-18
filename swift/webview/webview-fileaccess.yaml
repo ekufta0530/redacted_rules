@@ -1,0 +1,7 @@
+rules:
+- id: swift-webview-config-allows-file-access
+  message: Webviews were observed that do not disable access to application files.
+    If the WebView does not require loading content from the local filesystem of the
+    application, this setting should be disabled.
+  cwe:
+  - 'CWE-272: Least Privilege Violation'

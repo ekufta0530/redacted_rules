@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-strcatbuff
+  message: 'StrCatBuff is a banned function: no null-termination. Alternatives are
+    StringCbCat, StringCbCatEx, StringCchCat, StringCchCatEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

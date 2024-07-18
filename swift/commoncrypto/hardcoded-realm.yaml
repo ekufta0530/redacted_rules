@@ -1,0 +1,9 @@
+rules:
+- id: swift-hardcoded-realm-key
+  message: The application was observed to contain a hardcoded encryption key for
+    use with the Realm database. An attacker that obtains this key via reverse engineering
+    or access to source code will be able to re-use this key to encrypt or decrypt
+    Realm data. Cryptographic keys should be unique, and randomly generated per user,
+    per client.
+  cwe:
+  - 'CWE-321: Use of Hard-coded Cryptographic Key'

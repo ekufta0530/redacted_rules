@@ -1,0 +1,6 @@
+rules:
+- id: node-rsa-weak-key
+  message: Use of RSA-$BITS, which is considered weak. Based on NIST standards, RSA
+    keys should be at least 2048 bits.
+  cwe:
+  - 'CWE-326: Inadequate Encryption Strength'

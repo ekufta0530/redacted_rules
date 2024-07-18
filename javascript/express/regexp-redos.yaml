@@ -1,0 +1,9 @@
+rules:
+- id: regexp-redos
+  message: 'Detected `$REQ` argument enters calls to `RegExp`. This could lead to
+    a Regular Expression Denial of Service (ReDoS) through catastrophic backtracking.
+    If the input is attacker controllable, this vulnerability can lead to systems
+    being non-responsive or may crash due to ReDoS. Where possible avoid calls to
+    `RegExp` with user input, if required ensure user input is escaped or validated. '
+  cwe:
+  - 'CWE-1333: Inefficient Regular Expression Complexity'

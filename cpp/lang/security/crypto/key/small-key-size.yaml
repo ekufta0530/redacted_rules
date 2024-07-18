@@ -1,0 +1,6 @@
+rules:
+- id: small-key-size
+  message: '`$KEY_FUNCTION` is using a key size of only $KEY_BITS bits. This is less
+    than the recommended key size of 2048 bits.'
+  cwe:
+  - 'CWE-326: Inadequate Encryption Strength'

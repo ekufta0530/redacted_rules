@@ -1,0 +1,6 @@
+rules:
+- id: std-return-data
+  message: '`$FUNC` returns a pointer to the memory owned by `$VAR`. This pointer
+    is invalid after `$VAR` goes out of scope, which can trigger a use after free.'
+  cwe:
+  - 'CWE-416: Use After Free'

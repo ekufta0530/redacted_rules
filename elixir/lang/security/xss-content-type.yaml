@@ -1,0 +1,8 @@
+rules:
+- id: xss-content-type
+  message: 'The application is dynamically setting the Content-Type of a connection
+    response. If an attacker is able to set arbitrary content types for an HTTP response
+    containing user input, the attacker is likely to be able to leverage this for
+    cross-site scripting (XSS). '
+  cwe:
+  - 'CWE-79: Improper Neutralization of Input During Web Page Generation'

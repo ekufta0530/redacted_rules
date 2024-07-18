@@ -1,0 +1,10 @@
+rules:
+- id: ATS-consider-pinning
+  message: The application's App Transport Security (ATS) configuration does not leverage
+    the in-built public key pinning mechanisms. The application should consider leverage
+    ATS public key pinning to ensure that the application only communicates to serves
+    with an allow-listed certificate (and public key). By default the device will
+    allow connections if the default trust store (CA store) posesses the right certificates.
+    The number of accepted Certificate Authorities by default is hundreds. Using public
+    key pinning vastly reduces the attack surface.
+  cwe: 'CWE-296: Improper Following of a Certificate''s Chain of Trust'

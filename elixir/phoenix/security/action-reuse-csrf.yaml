@@ -1,0 +1,6 @@
+rules:
+- id: action-reuse-csrf
+  message: 'The app is most likely vulnerable to CSRF attacks through the reuse of
+    the same action for both GET and POST '
+  cwe:
+  - 'CWE-352: Cross-Site Request Forgery (CSRF)'

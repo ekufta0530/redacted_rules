@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-strncat
+  message: 'strncat is a banned function: limited error detection. Alternatives are
+    strncat_s, StringCbCatN, StringCbCatNEx, StringCchCatN, StringCchCatNEx, strlcat'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

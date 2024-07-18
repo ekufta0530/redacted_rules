@@ -1,0 +1,12 @@
+rules:
+- id: grpc-pgx-sqli-taint-med-conf
+  message: Untrusted input might be used to build a database query, which can lead
+    to a SQL injection vulnerability. An attacker can execute malicious SQL statements
+    and gain unauthorized access to sensitive data, modify, delete data, or execute
+    arbitrary system commands. Create parameterized queries in pgx by using positional
+    parameters (`$1`, `$2`, ...) and adding the values as additional arguments to
+    the function call. It is also possible to create prepared statements through the
+    `Prepare` function. This function uses the same placeholders for bound parameters.
+  cwe:
+  - 'CWE-89: Improper Neutralization of Special Elements used in an SQL Command (''SQL
+    Injection'')'

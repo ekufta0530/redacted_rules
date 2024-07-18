@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-strncpy
+  message: 'strncpy is a banned function: limited error detection. Alternatives are
+    strncpy_s, StringCbCopyN, StringCbCopyNEx, StringCchCopyN, StringCchCopyNEx, strlcpy'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

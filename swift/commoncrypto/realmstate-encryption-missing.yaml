@@ -1,0 +1,8 @@
+rules:
+- id: swift-hardcoded-realm-without-encryption
+  message: The application was observed to utilize Realm for data storage, but was
+    not observed to set an encryption key. When no encryption key is set in the configuration,
+    no encryption is used. To protect user and application data, the application should
+    specify an encryption key, which is randomly generated per user, per client.
+  cwe:
+  - 'CWE-311: Missing Encryption of Sensitive Data'

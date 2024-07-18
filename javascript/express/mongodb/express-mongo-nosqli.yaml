@@ -1,0 +1,8 @@
+rules:
+- id: express-mongo-nosqli
+  message: Detected a `$IMPORT` statement that comes from a `$REQ` argument. This
+    could lead to NoSQL injection if the variable is user-controlled and is not properly
+    sanitized. Be sure to properly sanitize the data if you absolutely must pass request
+    data into a mongo query.
+  cwe:
+  - 'CWE-943: Improper Neutralization of Special Elements in Data Query Logic'

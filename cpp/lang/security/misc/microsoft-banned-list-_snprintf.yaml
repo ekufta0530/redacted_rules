@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_snprintf
+  message: '_snprintf is a banned function: does not null-terminate. Alternatives
+    are _snprintf_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

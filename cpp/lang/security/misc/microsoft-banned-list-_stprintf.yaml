@@ -1,0 +1,7 @@
+rules:
+- id: microsoft-banned-list-_stprintf
+  message: '_stprintf is a banned function: limited error detection. Alternatives
+    are StringCbPrintf, StringCbPrintf_l, StringCbPrintf_lEx, StringCbPrintfEx, StringCchPrintf,
+    StringCchPrintfEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

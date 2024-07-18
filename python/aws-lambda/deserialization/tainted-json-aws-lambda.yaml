@@ -1,0 +1,8 @@
+rules:
+- id: tainted-json-aws-lambda
+  message: 'The application may convert user-controlled data into a JSON object, which
+    can lead the decoder to consume considerable CPU and memory resources, potentially
+    causing DoS (Denial of Service). The documentation for the `json` package recommends
+    limiting the size of data to be parsed. '
+  cwe:
+  - 'CWE-502: Deserialization of Untrusted Data'

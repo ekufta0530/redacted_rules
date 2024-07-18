@@ -1,0 +1,8 @@
+rules:
+- id: slowloris-dos
+  message: This server may be vulnerable to a Slowloris Denial-of-Service (DoS) attack.
+    Slowloris attacks exploit the fact that HTTP servers keep the connection active
+    if the request received is incomplete. By default, Go does not define a timeout
+    value for `ReadHeaderTimeout`, which leaves your application vulnerable. To mitigate
+    this, configure this parameter in your Server settings.
+  cwe: 'CWE-400: Uncontrolled Resource Consumption'

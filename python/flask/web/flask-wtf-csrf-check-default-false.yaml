@@ -1,0 +1,12 @@
+rules:
+- id: flask-wtf-csrf-check-default-false
+  message: The application does not appear to verify inbound requests which can lead
+    to a Cross-site request forgery (CSRF) vulnerability. If the application uses
+    cookie-based authentication, an attacker can trick users into sending authenticated
+    HTTP requests without their knowledge from any arbitrary domain they visit. With
+    `WTF_CSRF_CHECK_DEFAULT` set to `False` the CSRF tokens are still enabled and
+    included, but the check no longer happens automatically. Doing the check manually
+    requires a call to `csrf.protect()` before handling the request. An appropriate
+    place to do this is a `@app.before_request` decorated function.
+  cwe:
+  - 'CWE-352: Cross-Site Request Forgery (CSRF)'

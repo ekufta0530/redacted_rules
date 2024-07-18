@@ -1,0 +1,7 @@
+rules:
+- id: cross-site-websocket-hijacking
+  message: The app is not validating the origin when establishing a websocket server.
+    Websocket connections are not bound by the same-origin policy. Connections that
+    do not validate the origin may leak information to an attacker.
+  cwe:
+  - 'CWE-346: Origin Validation Error'

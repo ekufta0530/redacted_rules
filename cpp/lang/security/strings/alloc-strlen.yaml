@@ -1,0 +1,7 @@
+rules:
+- id: alloc-strlen
+  message: '`strlen(...)` returns the number of characters in a string, excluding
+    the NUL terminator. If a string is later copied into this allocated buffer, it
+    will trigger memory corruption.'
+  cwe:
+  - 'CWE-131: Incorrect Calculation of Buffer Size'

@@ -1,0 +1,8 @@
+rules:
+- id: keychain-device-sync
+  message: 'The application was observed to store keychain items with the synchronization
+    type `kSecAttrSynchronizableAny` meaning that the data will be synced to all of
+    the users other authenticated iOS, iPadOS, and MacOS devices. Unless necessary,
+    the application should avoid over-distribution of sensitive data, as this increases
+    the attack surface for which an attacker may gain access to the data. '
+  cwe: 'CWE-272: Least Privilege Violation'

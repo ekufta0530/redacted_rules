@@ -1,0 +1,8 @@
+rules:
+- id: swift-data-protection
+  message: File storage was observed that does not leverage the platforms strongest
+    available protection mechanisms. Where feasible, data should be stored with `completeFileProtection`
+    or `completeUnlessOpen`, ensuring that data is sufficiently protected at rest.
+    By default, data is unlocked the first time the user authenticates after boot.
+  cwe:
+  - 'CWE-311: Missing Encryption of Sensitive Data'

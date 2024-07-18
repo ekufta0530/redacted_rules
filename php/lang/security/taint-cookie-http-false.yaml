@@ -1,0 +1,7 @@
+rules:
+- id: taint-cookie-http-false
+  message: HttpOnly cookie flag is explicitly disabled. This will cause cookies to
+    be transmitted over unencrypted HTTP connections which can allow theft of confidential
+    user data such as session tokens.
+  cwe:
+  - 'CWE-1004: Sensitive Cookie Without ''HttpOnly'' Flag'

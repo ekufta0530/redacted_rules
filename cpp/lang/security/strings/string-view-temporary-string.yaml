@@ -1,0 +1,7 @@
+rules:
+- id: string-view-temporary-string
+  message: This `std::string_view` is constructed from a temporary `std::string`.
+    The `std::string` value is immeadiately destroyed after assignment and accessing
+    data through the `std::string_view` will trigger a use-after-free.
+  cwe:
+  - 'CWE-416: Use After Free'

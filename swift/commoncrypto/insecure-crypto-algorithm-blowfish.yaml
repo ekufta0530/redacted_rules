@@ -1,0 +1,7 @@
+rules:
+- id: insecure-crypto-algorithm-blowfish
+  message: 'The use of the insecure Blowfish encryption algorithm was detected. Blowfish
+    uses a 64-bit block size that makes it vulnerable to birthday attacks, and is
+    therefore considered unfit for purpose. '
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

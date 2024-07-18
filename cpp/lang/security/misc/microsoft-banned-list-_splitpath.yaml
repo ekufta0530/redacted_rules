@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_splitpath
+  message: '_splitpath is a banned function: no bounds checking. Alternatives are
+    _splitpath_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

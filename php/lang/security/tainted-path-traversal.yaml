@@ -1,0 +1,8 @@
+rules:
+- id: tainted-path-traversal
+  message: Detected user input going into a php include or require command, which
+    can lead to path traversal and sensitive data being exposed. These commands can
+    also lead to code execution. Instead, allowlist files that the user can access
+    or rigorously validate user input.
+  cwe:
+  - 'CWE-23: Relative Path Traversal'

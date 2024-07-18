@@ -1,0 +1,10 @@
+rules:
+- id: cryptography-insecure-random
+  message: "When generating random data for use in cryptographic operations, such\
+    \ as an initialization vector, you do not want to use the standard random module\
+    \ APIs. This is because they do not provide a cryptographically secure random\
+    \ number generator, which can result in major security issues depending on the\
+    \ algorithms in use. Therefore, it is our recommendation to always use your operating\
+    \ system\u2019s provided random number generator, which is available as os.urandom()."
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

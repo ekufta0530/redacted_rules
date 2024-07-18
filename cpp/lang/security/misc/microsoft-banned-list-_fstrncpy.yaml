@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_fstrncpy
+  message: '_fstrncpy is a banned function: legacy 16-bit far pointer implementation.
+    Alternatives are strncpy, wcsncpy'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

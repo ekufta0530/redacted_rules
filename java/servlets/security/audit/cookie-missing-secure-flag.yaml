@@ -1,0 +1,7 @@
+rules:
+- id: cookie-missing-secure-flag
+  message: A cookie was detected without setting the 'secure' flag. The 'secure' flag
+    for cookies prevents the client from transmitting the cookie over insecure channels
+    such as HTTP. Set the 'secure' flag by calling '$COOKIE.setSecure(true);'
+  cwe:
+  - 'CWE-614: Sensitive Cookie in HTTPS Session Without ''Secure'' Attribute'

@@ -1,0 +1,7 @@
+rules:
+- id: swift-forbidden-ios-apis
+  message: APIs (namely ptrace) were identified which are forbidden from iOS appstore
+    applications. The application should avoid calling such APIs, as this may result
+    in a blocker during app store review.
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

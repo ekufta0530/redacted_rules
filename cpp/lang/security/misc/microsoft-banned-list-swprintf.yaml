@@ -1,0 +1,7 @@
+rules:
+- id: microsoft-banned-list-swprintf
+  message: 'swprintf is a banned function: limited error detection. Alternatives are
+    swprintf_s StringCbPrintf, StringCbPrintf_l, StringCbPrintf_lEx, StringCbPrintf,
+    StringCbPrintfEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

@@ -1,0 +1,10 @@
+rules:
+- id: djangoorm-quoted-django
+  message: Untrusted input might be used to build a database query, which can lead
+    to a SQL injection vulnerability. An attacker can execute malicious SQL statements
+    and gain unauthorized access to sensitive data, modify, delete data, or execute
+    arbitrary system commands. Do not quote placeholders in the SQL string. Use `%s`
+    instead of `'%s'`.
+  cwe:
+  - 'CWE-89: Improper Neutralization of Special Elements used in an SQL Command (''SQL
+    Injection'')'

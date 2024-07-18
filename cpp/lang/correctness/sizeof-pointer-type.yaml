@@ -1,0 +1,7 @@
+rules:
+- id: sizeof-pointer-type
+  message: Using `sizeof(...)` on a pointer type is error prone and can lead to memory
+    corruption if the incorrect size is used to allocate memory. An explicit length
+    should be used instead of using `sizeof(...)`.
+  cwe:
+  - 'CWE-467: Use of sizeof() on a Pointer Type'

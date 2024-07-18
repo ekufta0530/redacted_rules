@@ -1,0 +1,9 @@
+rules:
+- id: hardcoded-pbkdf2-passphrase
+  message: A hardcoded passphrase was used with a call to the Password Based Key Derivation
+    Function (PBKDF2) function which derives a cryptographic key from the password
+    input. Because of this, the derived key is predictable and can be considered hard-coded
+    too. Keys should be derived using a unique passphrase and randomly generated salt
+    - per user.
+  cwe:
+  - 'CWE-259: Use of Hard-coded Password'

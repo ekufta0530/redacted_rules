@@ -1,0 +1,8 @@
+rules:
+- id: insecure-crypto-ecb-mode
+  message: 'Symmetric cryptographic operations were identified that use Electronic
+    Code Book (ECB) mode. ECB mode is considered insecure as identical plaintext blocks
+    encrypt to identical ciphertexts revealing patterns in the data. Use stronger,
+    better alternatives such as AES-GCM or ChaChaPoly. '
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

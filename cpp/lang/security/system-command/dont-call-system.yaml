@@ -1,0 +1,8 @@
+rules:
+- id: dont-call-system
+  message: Don't call `system`. It's a high-level wrapper that allows for stacking
+    multiple commands. Always prefer a more restrictive API such as calling `execve`
+    from the `exec` family.
+  cwe:
+  - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+    Command Injection'')'

@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-vswprintf
+  message: vswprintf is a banned function. Alternatives are vswprintf_s
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

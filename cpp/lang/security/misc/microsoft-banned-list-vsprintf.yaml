@@ -1,0 +1,8 @@
+rules:
+- id: microsoft-banned-list-vsprintf
+  message: 'vsprintf is a banned function: limited error detection. Alternatives are
+    vsprintf_s, StringCbVPrintf, StringCbVPrintf_l, StringCbVPrintf_lEx, StringCbVPrintfEx,
+    StringCchVPrintf, StringCchVPrintf_l, StringCchVPrintf_lEx, StringCchVPrintfEx,
+    vasprintf'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

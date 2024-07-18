@@ -1,0 +1,7 @@
+rules:
+- id: swift-keyedarchiver
+  message: The application was found to use `NSKeyedArchiver` without utilizing `requiringSecureCoding`,
+    which is not considered secure. This can allow for deserialization vulnerabilities,
+    and the application should always ensure `requiringSecureCoding` is set to true.
+  cwe:
+  - 'CWE-502: Deserialization of Untrusted Data'

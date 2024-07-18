@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_tcsncpy
+  message: '_tcsncpy is a banned function: limited error detection. Alternatives are
+    StringCbCopyN, StringCbCopyNEx, StringCchCopyN, StringCchCopyNEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

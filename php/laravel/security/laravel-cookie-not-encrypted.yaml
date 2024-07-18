@@ -1,0 +1,12 @@
+rules:
+- id: laravel-cookie-not-encrypted
+  message: The application appears to have disabled the cookie encryption middleware
+    which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application
+    uses cookie-based authentication, an attacker can trick users into sending authenticated
+    HTTP requests without their knowledge from any arbitrary domain they visit. You
+    can prevent this vulnerability by encrypting cookies if you use them to handle
+    sessions or storing sensitive data. To enable the cookie encryption middleware
+    add `\$APP\Http\Middleware\EncryptCookies` to the middleware group in your `$APP\Http\Kernel`
+    class.
+  cwe:
+  - 'CWE-352: Cross-Site Request Forgery (CSRF)'

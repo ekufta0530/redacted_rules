@@ -1,0 +1,7 @@
+rules:
+- id: search-cookie-secure-false-ini-config
+  message: Secure cookie flag is explicitly disabled. This will cause cookies to be
+    transmitted over unencrypted HTTP connections which can allow theft of confidential
+    user data such as session tokens.
+  cwe:
+  - 'CWE-614: Sensitive Cookie in HTTPS Session Without ''Secure'' Attribute'

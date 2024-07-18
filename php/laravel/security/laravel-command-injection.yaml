@@ -1,0 +1,13 @@
+rules:
+- id: laravel-command-injection
+  message: Untrusted input might be injected into a command executed by the application,
+    which can lead to a command injection vulnerability. An attacker can execute arbitrary
+    commands, potentially gaining complete control of the system. To prevent this
+    vulnerability, avoid executing OS commands with user input. If this is unavoidable,
+    validate and sanitize the user input, and use safe methods for executing the commands.
+    In PHP, it is possible to use `escapeshellcmd(...)` and `escapeshellarg(...)`
+    to correctly sanitize input when used respectively as system commands or command
+    arguments.
+  cwe:
+  - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+    Command Injection'')'

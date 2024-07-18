@@ -1,0 +1,8 @@
+rules:
+- id: ATS-insecure-webview-loads
+  message: The application's App Transport Security (ATS) configuration allows for
+    insecure accessing of HTTP content in WebViews. This means that connections accessed
+    in a WebView may be accessed via HTTP, potentially leaking that data to others
+    on the local network, or to other network devices the network traffic traverses
+    (proxies, firewalls, load balancers, etc).
+  cwe: 'CWE-319: Cleartext Transmission of Sensitive Information'

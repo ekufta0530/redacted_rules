@@ -1,0 +1,6 @@
+rules:
+- id: active-debug-code-getstacktrace
+  message: Possible active debug code detected. Deploying an application with debug
+    code can create unintended entry points or expose sensitive information.
+  cwe:
+  - 'CWE-489: Active Debug Code'

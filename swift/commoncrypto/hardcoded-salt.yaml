@@ -1,0 +1,8 @@
+rules:
+- id: hardcoded-salt
+  message: Cryptographic operations were identified that leverage a hardcoded salt/nonce.
+    A salt does not need to remain secret, but should be random, generated from cryptographically
+    secure sources of entropy, such as an CSPRNG. On iOS/macOS platforms, secure random
+    data can be obtained via the `SecCopyRandomBytes` API available from RandomizationServices.
+  cwe:
+  - 'CWE-323: Nonces should be used for the present occasion and only once.'

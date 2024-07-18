@@ -1,0 +1,5 @@
+rules:
+- id: http-ssrf-taint
+  message: This rule has been deprecated.
+  cwe:
+  - 'CWE-918: Server-Side Request Forgery (SSRF)'

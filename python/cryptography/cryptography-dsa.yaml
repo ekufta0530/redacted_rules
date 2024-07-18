@@ -1,0 +1,6 @@
+rules:
+- id: cryptography-dsa
+  message: DSA is a legacy algorithm and should generally be avoided in favor of choices
+    like EdDSA using curve25519 or ECDSA.
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

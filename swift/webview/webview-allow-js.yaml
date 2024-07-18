@@ -1,0 +1,7 @@
+rules:
+- id: swift-webview-config-allows-js
+  message: Webviews were observed that do not have JavaScript disabled. Consider disabling
+    JavaScript wherever the functionality is not required, following the principle
+    of least privelege.
+  cwe:
+  - 'CWE-272: Least Privilege Violation'

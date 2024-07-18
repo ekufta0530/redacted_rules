@@ -1,0 +1,7 @@
+rules:
+- id: keychain-without-user-auth
+  message: The application was observed to store keychain items that do not leverage
+    user authentication. Requiring the user to provide authentication increases the
+    confidence that the person using the phone is indeed authorized to view the information
+    being retrieved.
+  cwe: 'CWE-287: Improper Authentication'

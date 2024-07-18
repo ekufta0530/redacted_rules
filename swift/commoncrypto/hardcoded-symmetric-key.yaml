@@ -1,0 +1,8 @@
+rules:
+- id: hardcoded-symmetric-key
+  message: A hard-coded cryptographic key was detected. An attacker that obtains this
+    key via reverse engineering or access to source code will be able to re-use this
+    key to encrypt, decrypt, and/or sign data at will. Cryptographic keys should be
+    unique, and randomly generated per user, per client.
+  cwe:
+  - 'CWE-321: Use of Hard-coded Cryptographic Key'

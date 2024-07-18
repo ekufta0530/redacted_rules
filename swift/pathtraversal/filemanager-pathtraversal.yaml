@@ -1,0 +1,9 @@
+rules:
+- id: swift-path-traversal
+  message: Path traversal may allow malicious actors to access file content not intended
+    to be exposed to them. For example a user may be able to access sensitive secrets
+    stored within app files (e.g. UserDefaults/Plists/.etc.). Alternatively, users
+    with access to a victim's phone may be able to obtain senstivie data persisted
+    by the application.
+  cwe:
+  - 'CWE-35: Path Traversal'

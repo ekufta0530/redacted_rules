@@ -1,0 +1,9 @@
+rules:
+- id: swift-sqlite-injection
+  message: Client-side SQL injection was found, which has different impacts depending
+    on the SQL use-case. The impact may include the circumvention of local authentication
+    mechanisms, obtaining of sensitive data from the app, or manipulation of client-side
+    behavior.
+  cwe:
+  - 'CWE-89: Improper Neutralization of Special Elements used in an SQL Command (''SQL
+    Injection'')'

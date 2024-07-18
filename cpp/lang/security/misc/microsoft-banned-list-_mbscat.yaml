@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-_mbscat
+  message: _mbscat is a banned function. Alternatives are _mbscat_s
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

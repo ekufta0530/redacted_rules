@@ -1,0 +1,7 @@
+rules:
+- id: ATS-consider-ct
+  message: The application's App Transport Security (ATS) configuration does not leverage
+    the Certificate Transparency option. By opting in for Certificate Transparency
+    (CT), rogue CA or compromised CA issued certificates may be identified and blocked,
+    creating a more reliably secure TLS channel.
+  cwe: 'CWE-295: Improper Certificate Validation'

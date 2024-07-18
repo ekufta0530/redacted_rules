@@ -1,0 +1,9 @@
+rules:
+- id: keychain-acl-allows-biometry-changes
+  message: The application was observed to store keychain items that leverage biometric
+    protection, but allow for biometry changes. This means that an attacker with knowledge
+    of the victim's passcode or the ability to guess the passcode - can register their
+    own biometrics, and bypass this keychain authentication mechanism within the app.
+    The application should store keychain entries with `biometryCurrentSet` rather
+    than `biometryAny` or `userPresence`.
+  cwe: 'CWE-305: Authentication Bypass by Primary Weakness'

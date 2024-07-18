@@ -1,0 +1,8 @@
+rules:
+- id: ATS-arbitrary-loads
+  message: The application's App Transport Security (ATS) configuration allows for
+    insecure HTTP connections. The `NSAllowsArbitraryLoads` and `NSTemporaryExceptionAllowsInsecureHTTPLoads`
+    property keys can be used to allow HTTP for all domains or a particular domain
+    respectively. HTTPs should be used in all cases, to ensure secure communications
+    - protecting data in transport.
+  cwe: 'CWE-319: Cleartext Transmission of Sensitive Information'

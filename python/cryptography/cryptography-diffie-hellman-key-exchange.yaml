@@ -1,0 +1,7 @@
+rules:
+- id: cryptography-diffie-hellman-key-exchange
+  message: Elliptic-Curve Diffie-Hellman (ECDH) key exchange avoids all known feasible
+    cryptanalytic attacks, and modern web browsers now prefer ECDHE over the original,
+    finite field, Diffie-Hellman (DH).
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

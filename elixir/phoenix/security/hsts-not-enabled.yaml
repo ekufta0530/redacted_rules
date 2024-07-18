@@ -1,0 +1,6 @@
+rules:
+- id: hsts-not-enabled
+  message: The app does not contain production configurations to enabled HTTP Strict
+    Transport Security (HSTS).
+  cwe:
+  - 'CWE-319: Cleartext Transmission of Sensitive Information'

@@ -1,0 +1,9 @@
+rules:
+- id: memset-removal
+  message: This call to `$MEMSET` may be optimized out by the compiler because the
+    buffer is not accessed later in the function. This could be an issue if `$BUF`
+    contains sensitive data, such as passwords or cryptographic keys. Applications
+    should use functions such as `memset_s` or `memset_explicit` to ensure that the
+    sensitive data is cleared.
+  cwe:
+  - 'CWE-14: Compiler Removal of Code to Clear Buffers'

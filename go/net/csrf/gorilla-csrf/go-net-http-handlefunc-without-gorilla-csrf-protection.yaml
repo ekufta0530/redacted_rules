@@ -1,0 +1,13 @@
+rules:
+- id: go-net-http-handlefunc-without-gorilla-csrf-protection
+  message: The application does not appear to verify inbound requests which can lead
+    to a Cross-site request forgery (CSRF) vulnerability. If the application uses
+    cookie-based authentication, an attacker can trick users into sending authenticated
+    HTTP requests without their knowledge from any arbitrary domain they visit. This
+    vulnerability can be prevented by getting the CSRF token from the request and
+    including it in a response header by including `$W.Header.Set(X-CSRF-Token", csrf.Token($R))`
+    in the function before calling `$W.Write()`, or by wrapping the `$FUNC` call with
+    `csrf.Protect(authKey)($FUNC)` and using a key retrieved for instance from an
+    environment variable.
+  cwe:
+  - 'CWE-352: Cross-Site Request Forgery (CSRF)'

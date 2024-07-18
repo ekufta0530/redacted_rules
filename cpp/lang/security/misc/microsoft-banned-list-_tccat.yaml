@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_tccat
+  message: '_tccat is a banned function: no bounds checking. Alternatives are strcat_s,
+    StringCbCat, StringCbCatEx, StringCchCat, StringCchCatEx, strlcat'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

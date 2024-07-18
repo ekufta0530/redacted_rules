@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_tcscat
+  message: '_tcscat is a banned function: limited error detection. Alternatives are
+    StringCbCat, StringCbCatEx, StringCchCat, StringCchCatEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

@@ -1,0 +1,6 @@
+rules:
+- id: return-c-str
+  message: '`$FUNC` returns a pointer to the memory owned by `$STR`. This pointer
+    is invalid after `$STR` goes out of scope, which can trigger a use after free.'
+  cwe:
+  - 'CWE-416: Use After Free'

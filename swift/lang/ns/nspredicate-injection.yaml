@@ -1,0 +1,8 @@
+rules:
+- id: swift-predicate-injection
+  message: User input was observed to be included in the construction of Predicate
+    logic, potentically allowing for predicate injection, where the logic of the predicate
+    itself can be manipulated. If the predicate is used for security sensitive decisions,
+    the impact will be notably higher.
+  cwe:
+  - 'CWE-807: Reliance on Untrusted Inputs in a Security Decision'

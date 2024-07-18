@@ -1,0 +1,8 @@
+rules:
+- id: unescaped-tag
+  message: Detected a Thymeleaf tag that does not escape output. This is dangerous
+    because if any data in this expression can be controlled externally, it is a cross-site
+    scripting vulnerability. Instead, use the 'th:text' or '[[...]]' to escape this
+    expression.
+  cwe:
+  - 'CWE-116: Improper Encoding or Escaping of Output'

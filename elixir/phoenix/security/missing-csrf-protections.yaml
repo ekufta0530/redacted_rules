@@ -1,0 +1,7 @@
+rules:
+- id: missing-csrf-protections
+  message: The app is missing the `:protect_from_forgery` plug in a pipeline that
+    fetches a session, which attempts to mitigate Cross-Site Request Forgery (CSRF)
+    attacks.
+  cwe:
+  - 'CWE-352: Cross-Site Request Forgery (CSRF)'

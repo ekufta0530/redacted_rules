@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_ftcscat
+  message: '_ftcscat is a banned function: legacy 16-bit far pointer implementation.
+    Alternatives are strcat, wcscat'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

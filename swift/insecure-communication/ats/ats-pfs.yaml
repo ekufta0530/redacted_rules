@@ -1,0 +1,8 @@
+rules:
+- id: ATS-disables-PFS
+  message: The application's App Transport Security (ATS) configuration disables Perfect
+    Forward Secrecy (PFS) for one or more domains. PFS is a cryptographic technique
+    to ensure the confidentiality of prior communications, even if the long-term secret
+    keys are compromised in the future.
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

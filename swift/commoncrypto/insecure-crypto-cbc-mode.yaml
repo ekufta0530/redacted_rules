@@ -1,0 +1,11 @@
+rules:
+- id: insecure-crypto-cbc-mode
+  message: Symmetric cryptographic operations were identified that use Cipher Block
+    Chaining (CBC) mode. AES in CBC mode provides unauthenticated cryptographic encryption.
+    CBC is also malleable, meaning that an attacker can influence the decrypted plaintext
+    by modifying bits of the ciphertext (bit flipping attacks). Consider using an
+    authenticated encryption mechanism, such as AES-GCM or ChaChaPoly. If CBC mode
+    is **required**, consider augmenting the encryption with authentication by signing
+    the ciphertexts with a Message Authentication Code (e.g. HMAC).
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

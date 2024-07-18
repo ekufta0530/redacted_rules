@@ -1,0 +1,6 @@
+rules:
+- id: tainted-allocation-size
+  message: Externally controlled data influences the size of an allocation. This can
+    usually lead to overflow or underflow and later trigger an out of bounds conditions.
+  cwe:
+  - 'CWE-125: Out-of-bounds Read'

@@ -1,0 +1,7 @@
+rules:
+- id: microsoft-banned-list-_vstprintf
+  message: '_vstprintf is a banned function: no maximum length. Alternatives are StringCbVPrintf,
+    StringCbVPrintf_l, StringCbVPrintf_lEx, StringCbVPrinfEx, StringCchVPrintf, StringCchVPrintf_l,
+    StringCchVPrintf_lEx, StringCchVPrintfEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

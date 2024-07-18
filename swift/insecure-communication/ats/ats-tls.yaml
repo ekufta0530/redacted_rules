@@ -1,0 +1,8 @@
+rules:
+- id: ATS-minimum-tls-version
+  message: The application's App Transport Security (ATS) configuration lowers the
+    minimum TLS version requirement for one or more domains. This potentially reduces
+    the efficacy of the transport layer security, allowing for older, more vulnerable
+    versions of TLS to be utilized.
+  cwe: 'CWE-757: Selection of Less-Secure Algorithm During Negotiation (''Algorithm
+    Downgrade'')'

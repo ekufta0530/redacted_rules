@@ -1,0 +1,7 @@
+rules:
+- id: world-writable-file
+  message: This call makes a world-writable file which allows any user on a machine
+    to write to the file. This may allow attackers to influence the behaviour of this
+    process by writing to the file.
+  cwe:
+  - 'CWE-732: Incorrect Permission Assignment for Critical Resource'

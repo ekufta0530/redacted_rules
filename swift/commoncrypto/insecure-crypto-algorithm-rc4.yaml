@@ -1,0 +1,7 @@
+rules:
+- id: insecure-crypto-algorithm-rc4
+  message: The use of the insecure RC4 stream cipher encryption algorithm was identified.
+    RC4 is deprecated and considered insecure. The application should leverage more
+    suitable algorithms such as AES in GCM mode, or ChaChaPoly.
+  cwe:
+  - 'CWE-327: Use of a Broken or Risky Cryptographic Algorithm'

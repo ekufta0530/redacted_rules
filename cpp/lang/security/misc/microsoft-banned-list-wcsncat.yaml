@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-wcsncat
+  message: 'wcsncat is a banned function: limited error detection. Alternatives are
+    wcsncat_s, wcslcat'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

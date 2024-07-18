@@ -1,0 +1,9 @@
+rules:
+- id: nosql-injection-servlets
+  message: Untrusted input might be used to build a database query, which can lead
+    to a NoSQL injection vulnerability. An attacker can execute malicious NoSQL statements
+    and gain unauthorized access to sensitive data, modify, delete data, or execute
+    arbitrary system commands. Make sure all user input is validated and sanitized,
+    and avoid if possible to use it to construct the NoSQL statement.
+  cwe: 'CWE-89: Improper Neutralization of Special Elements used in an SQL Command
+    (''SQL Injection'')'

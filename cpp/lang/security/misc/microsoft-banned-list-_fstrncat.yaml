@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_fstrncat
+  message: '_fstrncat is a banned function: legacy 16-bit far pointer implementation.
+    Alternatives are StringCbCatN, StringCbCatNEx, StringCchCatN, StringCchCatNEx'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

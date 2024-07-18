@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_stscanf
+  message: '_stscanf is a banned function: no bounds checking. Alternatives are sscanf_s
+    (requires format string changes)'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

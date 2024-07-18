@@ -1,0 +1,9 @@
+rules:
+- id: verify-biometric-changes
+  message: The application was observed to leverage biometrics, without verifying
+    that biometric changes have not taken place. Failure to do so means that an attacker
+    with knowledge of the victim's passcode or the ability to guess the passcode -
+    can register their own biometrics, and bypass the authentication mechanism within
+    the app. The application should check first that biometric changes have not been
+    made, then proceed.
+  cwe: 'CWE-305: Authentication Bypass by Primary Weakness'

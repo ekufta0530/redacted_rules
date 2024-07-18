@@ -1,0 +1,5 @@
+rules:
+- id: microsoft-banned-list-snscanf
+  message: 'snscanf is a banned function: no bounds checking. Alternatives are sscanf_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

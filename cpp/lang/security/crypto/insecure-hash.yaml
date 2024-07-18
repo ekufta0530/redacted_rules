@@ -1,0 +1,7 @@
+rules:
+- id: insecure-hash
+  message: This hashing algorithm is insecure. If this hash is used in a security
+    context, such as password hashing, it should be converted to a stronger hashing
+    algorithm.
+  cwe:
+  - 'CWE-328: Use of Weak Hash'

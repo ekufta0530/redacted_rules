@@ -1,0 +1,8 @@
+rules:
+- id: slowloris-dos-functions
+  message: These functions do not allow to set a a timeout value for reading requests.
+    As a result, the app server may be vulnerable to a Slowloris Denial-of-Service
+    (DoS) attack. Slowloris attacks exploit the fact that HTTP servers keep the connection
+    active if the request received is incomplete. To mitigate this, implement a `Server`
+    and set the timeout with `ReadHeaderTimeout`.
+  cwe: 'CWE-400: Uncontrolled Resource Consumption'

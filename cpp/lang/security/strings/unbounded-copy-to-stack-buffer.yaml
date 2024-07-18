@@ -1,0 +1,7 @@
+rules:
+- id: unbounded-copy-to-stack-buffer
+  message: The function `$FUN` does not impose any size limitation to what it writes
+    to `$BUF`. That may lead to a stack buffer overflow if there is no validation
+    on the size of the input.
+  cwe:
+  - 'CWE-120: Buffer Copy without Checking Size of Input (''Classic Buffer Overflow'')'

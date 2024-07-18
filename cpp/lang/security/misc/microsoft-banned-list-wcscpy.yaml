@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-wcscpy
+  message: 'wcscpy is a banned function: no bounds checking. Alternatives are wcscpy_s,
+    StringCbCopy, StringCbCopyEx, StringCchCopy, StringCchCopyEx, wcslcpy'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'

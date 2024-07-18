@@ -1,0 +1,6 @@
+rules:
+- id: microsoft-banned-list-_tsplitpath
+  message: '_tsplitpath is a banned function: no bounds checking. Alternatives are
+    splitpath_s, wsplitpath_s'
+  cwe:
+  - 'CWE-477: Use of Obsolete Function'
